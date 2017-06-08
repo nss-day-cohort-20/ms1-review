@@ -51,6 +51,15 @@ h1 {
   border-width: 4px;
   border-color: #FF7F50;
   border-radius: 5px;
+  background-image: none !important
+}
+
+.monkeyfied {
+  background-image: url("img/dog-monkey.jpeg") !important
+}
+
+.horsefied {
+  background-image: url("img/horse-rainbow.jpeg") !important
 }
 
 

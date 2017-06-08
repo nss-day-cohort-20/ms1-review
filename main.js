@@ -14,15 +14,23 @@ for ( let i = 0; i < rainbowPics.length; i++) {
 }
 
 monkeyBtn.addEventListener("click", function() {
-  updateCard(dogPics, dogH1, monkeyBtn, "Dog", "Monkey")
+  updateCard(dogPics, "monkey");
+  updateText(monkeyBtn, dogH1, "Dog", "Monkey");
 })
 
 horseBtn.addEventListener("click", function() {
-  updateCard(rainbowPics, rainbowH1, horseBtn, "Rainbow", "Horse")
+  updateCard(rainbowPics, "horse");
+  updateText(horseBtn, rainbowH1, "Rainbow", "Horse");
 })
 
-function updateCard(pics, h1, btn, cat1, cat2) {
-  console.log("updateCard called");
+function updateCard(pics, category) {
+  for ( let i = 0; i < pics.length; i++) {
+    pics[i].classList.toggle("fancy-border");
+    pics[i].classList.toggle(`${category}fied`);
+  } 
+}
+
+function updateText(btn, h1, cat1, cat2) {
   btn.classList.toggle(`${cat1}ify`);
   if (btn.classList.contains(`${cat1}ify`) ) {
     btn.innerHTML = `${cat1}ify it!`;
@@ -31,7 +39,4 @@ function updateCard(pics, h1, btn, cat1, cat2) {
     btn.innerHTML = `${cat2}ify it!`;
     h1.innerHTML = `My Awesome ${cat1} Pics`
   }
-  for ( let i = 0; i < pics.length; i++) {
-    pics[i].classList.toggle("fancy-border")
-  } 
 }

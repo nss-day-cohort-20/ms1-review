@@ -7,7 +7,7 @@ h1 {
   font-family: Helvetica;
 }
 
-.aussie {
+/*.aussie {
   background-image: url('img/dog1.jpeg')
 }
 
@@ -35,8 +35,7 @@ h1 {
 }
 .bow-double {
   background-image: url('img/rainbow2.jpeg')
-}
-
+}*/
 
 .card {
   display: inline-block;
@@ -47,3 +46,11 @@ h1 {
   margin-right: 10px;
   background-size: cover;
 }
+
+.fancy-border {
+  border-width: 4px;
+  border-color: #FF7F50;
+  border-radius: 5px;
+}
+
+

@@ -1,0 +1,49 @@
+body {
+  background: #8FBC8F;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Helvetica;
+}
+
+.aussie {
+  background-image: url('img/dog1.jpeg')
+}
+
+.smiley {
+  background-image: url('img/dog3.jpeg')
+}
+
+.shibu {
+  background-image: url('img/dog2.jpeg')
+}
+
+.aussie {
+  background-image: url('img/dog1.jpeg')
+}
+
+.aussie {
+  background-image: url('img/dog1.jpeg')
+}
+
+.bow-close {
+  background-image: url('img/rainbow1.jpeg')
+}
+.bow-flash {
+  background-image: url('img/rainbow3.jpeg')
+}
+.bow-double {
+  background-image: url('img/rainbow2.jpeg')
+}
+
+
+.card {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  height: 150px;
+  border: 2px solid black;
+  margin-right: 10px;
+  background-size: cover;
+}
